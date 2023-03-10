@@ -17,6 +17,6 @@ def test_blowfish():
     # par contre il est possible de vérifier que la fonction decrypted.
 
     encrypted = blowfish.encrypt(msg, key)
-    assert decrypted != "Message"
+    assert encrypted != "Message"
     decrypted = blowfish.decrypt(encrypted, key)
     assert decrypted == "Message"
