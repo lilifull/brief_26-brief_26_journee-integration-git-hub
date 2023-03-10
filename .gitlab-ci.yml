@@ -5,7 +5,7 @@ unit-test-job:
   stage: test    
   image: python:3.9
   before_script:
-    - pip install -r requirement.txt
+    - pip install -r requirements.txt
   script:
     - echo "Running unit tests."
     - pytest -v
