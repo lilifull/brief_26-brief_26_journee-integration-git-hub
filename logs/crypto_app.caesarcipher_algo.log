@@ -1,0 +1,1 @@
+2023-03-10 14:21:42,977 - ERROR - crypto_app.caesarcipher_algo - Error during the encryption of a message with the Caesar cipher. The key must be an int
