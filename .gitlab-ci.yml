@@ -9,5 +9,3 @@ unit-test-job:
   script:
     - echo "Running unit tests."
     - pytest -v
-
-

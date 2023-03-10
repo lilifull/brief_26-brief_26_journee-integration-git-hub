@@ -1,22 +1,23 @@
-
 from crypto_app.blowfish_algo import Blowfish
 
 def test_blowfish():
     """
-    Un exemple de fonction de test, ici avec le cryptage
-    de blowfish.
+    Pour cette algo il est difficile de vérifier la valeur de la variable encryped,
+    car elle est différente à chaque exécution du code. 
+    Le test verifie seulement que le msg de départ est different de la variable encrypted.
+    Par contre il est possible de vérifier la fonction decrypted.
     """
 
-    blowfish = Blowfish()
+    algo = Blowfish()
     msg = "Message"
     key = "justineisthebest"
 
-    # pour cette fonction il est difficile de vérifier la valeur de la variable encryped,
-    # car elle est différente à chaque exécution du code. 
-    # la vérification sur fait seulement sur le fait que le msg de départ est different de la variable encrypted.
-    # par contre il est possible de vérifier que la fonction decrypted.
-
-    encrypted = blowfish.encrypt(msg, key)
+    encrypted = algo.encrypt(msg, key)
+    #print(encrypted)
     assert encrypted != "Message"
-    decrypted = blowfish.decrypt(encrypted, key)
+    decrypted = algo.decrypt(encrypted, key)
+    #print(decrypted)
     assert decrypted == "Message"
+    
+if __name__ == '__main__':
+    test_blowfish()

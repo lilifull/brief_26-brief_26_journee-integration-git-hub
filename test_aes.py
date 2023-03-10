@@ -1,17 +1,17 @@
-
 from crypto_app.aes_algo import AdvancedEncryptionStandard
 
 def test_aes():
-    """
-    Un exemple de fonction de test, ici avec le cryptage
-    d'aes.
-    """
 
-    aes = AdvancedEncryptionStandard()
+    algo = AdvancedEncryptionStandard()
     msg = "Message"
     key = "justineisthebest"
 
-    encrypted = aes.encrypt(msg, key)
+    encrypted = algo.encrypt(msg, key)
+    #print(encrypted)
     assert encrypted == "3d87266b6f76d9"
-    decrypted = aes.decrypt(encrypted, key)
+    decrypted = algo.decrypt(encrypted, key)
+    #print(decrypted)
     assert decrypted == "Message"
+
+if __name__ == '__main__':
+    test_aes()
