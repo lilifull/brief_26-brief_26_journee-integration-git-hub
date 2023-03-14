@@ -13,11 +13,10 @@ def test_enigma():
     ]
 
     encrypted = algo.encrypt(msg, key)
-    #print(encrypted)
     assert encrypted == "FUTALDK"
     decrypted = algo.decrypt(encrypted, key)
-    #print(decrypted)
     assert decrypted == "MESSAGE"
 
+    
 if __name__ == '__main__':
     test_enigma()
