@@ -6,11 +6,12 @@ def test_aes():
     algo = AdvancedEncryptionStandard()
     msg = "Message"
     key = "justineisthebest"
+    result = "3d87266b6f76d9"
 
     encrypted = algo.encrypt(msg, key)
-    assert encrypted == "3d87266b6f76d9"
+    assert encrypted == result
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == "Message"
+    assert decrypted == msg
 
 
 if __name__ == '__main__':

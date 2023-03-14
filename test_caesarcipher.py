@@ -6,11 +6,12 @@ def test_caesarcipher():
     algo = CaesarCipher()
     msg = "Message"
     key = 10
+    result = "Wocckqo"
 
     encrypted = algo.encrypt(msg, key)
-    assert encrypted == "Wocckqo"
+    assert encrypted == result
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == "Message"
+    assert decrypted == msg
 
 
 if __name__ == '__main__':

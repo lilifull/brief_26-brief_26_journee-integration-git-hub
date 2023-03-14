@@ -11,11 +11,12 @@ def test_enigma():
         ('F', 'H', 'K'),
         [('A', 'K')]
     ]
+    result = "FUTALDK"
 
     encrypted = algo.encrypt(msg, key)
-    assert encrypted == "FUTALDK"
+    assert encrypted == result
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == "MESSAGE"
+    assert decrypted == msg
 
 
 if __name__ == '__main__':

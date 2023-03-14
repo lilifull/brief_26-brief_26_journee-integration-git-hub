@@ -6,11 +6,12 @@ def test_vigenerecipher():
     algo = VigenereCipher()
     msg = "Message"
     key = "adtjcopr"
+    result = "Mhlbcut"
 
     encrypted = algo.encrypt(msg, key)
-    assert encrypted == "Mhlbcut"
+    assert encrypted == result
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == "Message"
+    assert decrypted == msg
 
 
 if __name__ == '__main__':

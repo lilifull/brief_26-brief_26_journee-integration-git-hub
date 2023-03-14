@@ -6,11 +6,12 @@ def test_des():
     algo = DES()
     msg = "Message"
     key = "adtjcopr"
+    result = "18888565fbd90544"
 
     encrypted = algo.encrypt(msg, key)
-    assert encrypted == "18888565fbd90544"
+    assert encrypted == result
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == "Message"
+    assert decrypted == msg
 
 
 if __name__ == '__main__':

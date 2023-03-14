@@ -14,9 +14,9 @@ def test_blowfish():
     key = "justineisthebest"
 
     encrypted = algo.encrypt(msg, key)
-    assert encrypted != "Message"
+    assert encrypted != msg
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == "Message"
+    assert decrypted == msg
 
 
 if __name__ == '__main__':
