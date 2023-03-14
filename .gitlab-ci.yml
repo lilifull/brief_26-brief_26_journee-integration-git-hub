@@ -11,8 +11,12 @@ unit-test-job:
     - echo "Running unit tests."
     - pytest -v
 
-flake8:
+linting:
   stage: linting
   image: registry.gitlab.com/pipeline-components/flake8:latest
   script:
-    - flake8 --verbose .
+    - isort . --chek-only
+    - black --check .
+    - flake .
+    - find . -type f -name "*.py" | xargs pylint
+    
