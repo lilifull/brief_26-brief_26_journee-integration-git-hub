@@ -16,7 +16,10 @@ flake8:
   before_script:
     - pip install flake8
   script:
-    - flake8 --exclude=crypto_app
+    - flake8 --exclude=crypto_app --count > flake8_rapport.txt
+  artifacts:
+    paths:
+        - flake8_rapport.txt
   allow_failure: true
 
 
