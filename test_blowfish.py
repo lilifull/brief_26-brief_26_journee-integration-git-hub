@@ -17,7 +17,7 @@ def test_blowfish():
     assert encrypted != "Message"
     decrypted = algo.decrypt(encrypted, key)
     assert decrypted == "Message"
-    
-    
+
+
 if __name__ == '__main__':
     test_blowfish()

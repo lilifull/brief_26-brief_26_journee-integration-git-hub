@@ -17,6 +17,6 @@ def test_enigma():
     decrypted = algo.decrypt(encrypted, key)
     assert decrypted == "MESSAGE"
 
-    
+
 if __name__ == '__main__':
     test_enigma()
