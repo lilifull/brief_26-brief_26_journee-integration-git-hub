@@ -4,19 +4,15 @@ stages:
 
 unit-test-job:   
   stage: test    
-  image: python:3.9
-  before_script:
-    - pip install -r requirements.txt
   script:
     - echo "Running unit tests."
     - pytest -v
 
-linting:
+flake8:
   stage: linting
-  image: python:3.9
+  image: registry.gitlab.com/pipeline-components/flake8:latest
   script:
-    - isort . 
-    - black .
-    - flake .
-    - find . -type f -name "*.py" | xargs pylint
+    - flake8 --verbose .
+
+
 
