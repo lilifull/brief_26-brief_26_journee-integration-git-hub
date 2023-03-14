@@ -13,7 +13,7 @@ unit-test-job:
 
 linting:
   stage: linting
-  image: registry.gitlab.com/pipeline-components/flake8:latest
+  image: python:3.9
   script:
     - isort . 
     - black .
