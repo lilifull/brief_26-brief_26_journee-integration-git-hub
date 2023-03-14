@@ -1,5 +1,6 @@
 from crypto_app.des_algo import DES
 
+
 def test_des():
 
     algo = DES()

@@ -1,5 +1,6 @@
 from crypto_app.md5_algo import MD5
 
+
 def test_md5():
 
     algo = MD5()

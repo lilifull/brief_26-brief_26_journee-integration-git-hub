@@ -1,5 +1,6 @@
 from crypto_app.sha_algo import SHA
 
+
 def test_sha():
 
     algo = SHA()

@@ -1,10 +1,11 @@
 import logging
 import logging.handlers
-from operator import xor
 import os
-import blowfish
-from crypto_app.encryptioninterface import EncryptionInterface
+from operator import xor
 
+import blowfish
+
+from crypto_app.encryptioninterface import EncryptionInterface
 
 """Implementation of the RSA encryption method"""
 

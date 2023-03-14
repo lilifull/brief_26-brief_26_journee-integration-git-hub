@@ -1,8 +1,9 @@
 """Implementation of the SHA512 hashing function"""
 
+import hashlib
 import logging
 import logging.handlers
-import hashlib
+
 from crypto_app.encryptioninterface import EncryptionInterface
 
 

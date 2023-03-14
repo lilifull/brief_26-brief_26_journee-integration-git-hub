@@ -1,5 +1,6 @@
 from crypto_app.blowfish_algo import Blowfish
 
+
 def test_blowfish():
     """
     Pour cette algo il est difficile de vérifier la valeur de la variable encryped,

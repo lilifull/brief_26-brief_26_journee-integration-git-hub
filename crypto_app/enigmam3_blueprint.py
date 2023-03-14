@@ -1,7 +1,7 @@
 import logging
 import logging.handlers
 
-from flask import render_template, abort, request
+from flask import abort, render_template, request
 from jinja2 import TemplateNotFound
 
 from crypto_app.baseblueprint import BaseBlueprint

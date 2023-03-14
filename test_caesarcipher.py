@@ -1,5 +1,6 @@
 from crypto_app.caesarcipher_algo import CaesarCipher
 
+
 def test_caesarcipher():
 
     algo = CaesarCipher()

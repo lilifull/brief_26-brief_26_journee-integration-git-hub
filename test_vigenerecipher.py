@@ -1,5 +1,6 @@
 from crypto_app.vigenerecipher_algo import VigenereCipher
 
+
 def test_vigenerecipher():
 
     algo = VigenereCipher()

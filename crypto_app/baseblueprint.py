@@ -3,7 +3,6 @@ import logging.handlers
 
 from flask import Blueprint
 
-
 """This module defines the class BaseBlueprint, the parent class for all the
 blueprints loaded by Flask. Each encryption/hashing method in the app has its
 own blueprint.

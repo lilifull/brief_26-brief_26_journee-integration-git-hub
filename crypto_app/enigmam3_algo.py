@@ -3,8 +3,11 @@ German navy)"""
 
 import logging
 import logging.handlers
+
 from pycipher import Enigma
+
 from crypto_app.encryptioninterface import EncryptionInterface
+
 
 class EnigmaM3(EncryptionInterface):
 

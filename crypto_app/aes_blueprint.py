@@ -1,11 +1,11 @@
 import logging
 import logging.handlers
 
-from flask import render_template, abort, request
+from flask import abort, render_template, request
 from jinja2 import TemplateNotFound
 
-from crypto_app.baseblueprint import BaseBlueprint
 from crypto_app.aes_algo import AdvancedEncryptionStandard
+from crypto_app.baseblueprint import BaseBlueprint
 
 """The class below is a blueprint loaded by Flask. See baseblueprint.py for
 more info"""

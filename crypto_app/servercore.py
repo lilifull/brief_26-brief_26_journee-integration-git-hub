@@ -4,7 +4,7 @@ blueprints (one encryption method = one blueprint)"""
 import logging
 import logging.handlers
 
-from flask import Flask, render_template, abort
+from flask import Flask, abort, render_template
 from jinja2 import TemplateNotFound
 
 from crypto_app.aes_blueprint import AESBlueprint
@@ -16,6 +16,7 @@ from crypto_app.md5_blueprint import MD5Blueprint
 from crypto_app.rsa_blueprint import RSABlueprint
 from crypto_app.sha_blueprint import SHABlueprint
 from crypto_app.vigenerecipher_blueprint import VigenereCipherBlueprint
+
 
 class ServerCore:
 

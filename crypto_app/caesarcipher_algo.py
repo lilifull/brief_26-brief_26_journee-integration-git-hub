@@ -3,7 +3,9 @@
 
 import logging
 import logging.handlers
+
 from crypto_app.encryptioninterface import EncryptionInterface
+
 
 class CaesarCipher(EncryptionInterface):
 

@@ -1,5 +1,6 @@
 from crypto_app.enigmam3_algo import EnigmaM3
 
+
 def test_enigma():
 
     algo = EnigmaM3()

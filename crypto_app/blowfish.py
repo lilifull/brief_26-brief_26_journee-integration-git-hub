@@ -24,8 +24,9 @@ Schneier and more details about it can be found at
 <https://www.schneier.com/blowfish.html>.
 """
 
-from struct import Struct, error as struct_error
 from itertools import cycle as iter_cycle
+from struct import Struct
+from struct import error as struct_error
 
 __version__ = "0.6.1"
 

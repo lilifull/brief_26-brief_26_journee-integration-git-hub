@@ -1,10 +1,12 @@
 """Implementation of the RSA encryption method"""
 
-import logging
-import logging.handlers
 import base64
 import binascii
+import logging
+import logging.handlers
+
 from Crypto.PublicKey import RSA
+
 from crypto_app.encryptioninterface import EncryptionInterface
 
 

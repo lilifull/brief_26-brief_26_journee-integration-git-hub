@@ -1,9 +1,10 @@
 import logging
 import logging.handlers
+
 from Crypto.Cipher import AES
 from Crypto.Util import Counter
-from crypto_app.encryptioninterface import EncryptionInterface
 
+from crypto_app.encryptioninterface import EncryptionInterface
 
 """Implementation of the AES encryption method"""
 
