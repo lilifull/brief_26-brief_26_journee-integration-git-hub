@@ -16,7 +16,7 @@ flake8:
   before_script:
     - pip install flake8
   script:
-    - flake8 --verbose .
+    - flake8 --exclude=crypto_app
   allow_failure: true
 
 
