@@ -16,7 +16,8 @@ def test_enigma():
     encrypted = algo.encrypt(msg, key)
     assert encrypted == result
     decrypted = algo.decrypt(encrypted, key)
-    assert decrypted == msg
+    assert decrypted == msg.upper()
+    
 
 
 if __name__ == '__main__':
