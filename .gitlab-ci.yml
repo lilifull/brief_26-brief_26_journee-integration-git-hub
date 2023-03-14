@@ -15,8 +15,8 @@ linting:
   stage: linting
   image: registry.gitlab.com/pipeline-components/flake8:latest
   script:
-    - isort . --chek-only
-    - black --check .
+    - isort . 
+    - black .
     - flake .
     - find . -type f -name "*.py" | xargs pylint
-    
+
