@@ -1,10 +1,8 @@
 astroid==2.15.0
-attrs @ file:///opt/conda/conda-bld/attrs_1642510447205/work
 black==23.1.0
 blowfish==0.6.1
 certifi==2022.12.7
 charset-normalizer==3.1.0
-click @ file:///home/conda/feedstock_root/build_artifacts/click_1666798198223/work
 coverage==7.2.1
 crypto==1.4.1
 des==1.0.6
@@ -12,38 +10,28 @@ dill==0.3.6
 flake8==6.0.0
 Flask==2.2.2
 idna==3.4
-importlib-metadata @ file:///home/conda/feedstock_root/build_artifacts/importlib-metadata_1672612343532/work
-iniconfig @ file:///home/linux1/recipes/ci/iniconfig_1610983019677/work
 isort==5.12.0
-itsdangerous @ file:///home/conda/feedstock_root/build_artifacts/itsdangerous_1648147185463/work
 Jinja2==3.0.3
 lazy-object-proxy==1.9.0
-MarkupSafe @ file:///Users/runner/miniforge3/conda-bld/markupsafe_1674135977284/work
 mccabe==0.7.0
 mypy-extensions==1.0.0
 Naked==0.1.32
 packaging==23.0
 pathspec==0.11.0
 platformdirs==3.1.1
-pluggy @ file:///opt/concourse/worker/volumes/live/42ef51ae-f79c-40e0-6d26-eb6fe9d8ba6e/volume/pluggy_1648042596777/work
-py @ file:///opt/conda/conda-bld/py_1644396412707/work
 pycipher==0.5.2
 pycodestyle==2.10.0
 pycryptodome==3.17
 pycryptodomex==3.17
 pyflakes==3.0.1
 pylint==2.17.0
-pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
 pytest==7.1.2
 pytest-html==3.2.0
 pytest-metadata==2.0.4
 PyYAML==6.0
 requests==2.28.2
 shellescape==3.8.1
-tomli @ file:///tmp/build/80754af9/tomli_1637314251069/work
 tomlkit==0.11.6
 typing_extensions==4.5.0
 urllib3==1.26.14
-Werkzeug @ file:///home/conda/feedstock_root/build_artifacts/werkzeug_1676411946679/work
 wrapt==1.15.0
-zipp @ file:///home/conda/feedstock_root/build_artifacts/zipp_1677313463193/work
